@@ -1,4 +1,4 @@
-FROM nvidia/cuda-ppc64le:10.2-base-ubuntu18.04
+FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-devel
 RUN apt update
 RUN  apt install -y ocl-icd-opencl-dev opencl-headers clinfo
 RUN apt install -y software-properties-common
